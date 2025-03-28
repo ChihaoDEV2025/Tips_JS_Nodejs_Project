@@ -16,6 +16,31 @@
 //level 01: Handle deployment
 
 //Database for Dev
+
+// const dev = {
+//   app: {
+//     port: 3000,
+//   },
+//   db: {
+//     host: "localhost",
+//     port: 27017,
+//     name: "dbDev",
+//   },
+// };
+
+// //Database for product
+// const product= {
+//   app: {
+//     port: 3000,
+//   },
+//   db: {
+//     host: "localhost",
+//     port: 27017,
+//     name: "dbProduct",
+//   },
+// };
+
+//Level 3:
 const dev = {
   app: {
     port: 3000,
@@ -28,7 +53,7 @@ const dev = {
 };
 
 //Database for product
-const product= {
+const product = {
   app: {
     port: 3000,
   },
@@ -40,9 +65,9 @@ const product= {
 };
 
 //Initialize config => dev product are the properties
-const config = {dev,product};
+const config = { dev, product };
 
 //Using env to hide the sensitive information : default is dev
-const env = process.env.NODE_ENV || "dev"
+const env = process.env.NODE_ENV || "dev";
 
-module.exports = config[en];
+module.exports = config[env];

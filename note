@@ -1,3 +1,5 @@
+
+-------------------------------------------------------
 4/1/2025 - set api
 models -> routers
 
@@ -8,8 +10,19 @@ models -> routers
             using more the  folders in routers directory to handle tasks on their own
 
             routers to write route : get post ('/shop/signup',()=>{})
-            controllers to write their behavior
+            controllers to write their behavior ,then require and using that method
 
+next,
+        create postman directory ,
+                 create file access.post.http (download rest client to use .http file)
+
+                //use variable @variable = link in common
+                 run: click send request that render ahead of HTTP request
+
+                 
+undone: fix error and run post request
+
+------------------------------------------------
 //high level : generate code by class
 
 status: 200 success

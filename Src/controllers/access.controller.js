@@ -1,16 +1,22 @@
 "use strict";
 
-// class AccessController {
-//   signUp = async (req,res,next)=>{
-//     try{
-//         console.log('[P]::signUp::',req.body);
-//         //note : here is 201 not 200
-//         return res.status(201).json({
-//             // code:
-//         })
+class AccessController {
+  signUp = async (req, res, next) => {
+    try {
+      console.log("[P]::signUp::", req.body);
 
-//     }
-//   }
-// }
+      /* 200: ok
+            201: created
+        */
+
+      return res.status(201).json({
+        code: "2001", //dev definition number and depend on each team
+        metadata: { userid: 1 },
+      });
+    } catch (e) {
+      next(e);
+    }
+  };
+}
 
 module.exports = new AccessController();

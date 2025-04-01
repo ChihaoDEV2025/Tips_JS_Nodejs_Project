@@ -21,6 +21,7 @@ next,
 
                  
 undone: fix error and run post request
+        How to connect the file together : app.use , process.on , require...
 
 ------------------------------------------------
 //high level : generate code by class

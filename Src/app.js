@@ -22,12 +22,21 @@ const { countConnect } = require("./helpers/check.connect");
 const { checkOverLoad } = require("./helpers/check.connect");
 checkOverLoad();
 countConnect();
-//3.1 init router
-app.get("/", (req, res, next) => {
-  return res.status(200).json({
-    message: "Welcome Here ",
-  });
-});
+
+//-------------------------------------------------
+//3.1 init router //cut here
+
+// app.get("/", (req, res, next) => {
+//   return res.status(200).json({
+//     message: "Welcome Here ",
+//   });
+// });
+
+//instead of
+app.use("/", require("./routers/index"));
+
+//-------------------------------------------------
+
 //4. Handling Errors
 
 //The last one

@@ -1,0 +1,16 @@
+4/1/2025 - set api
+models -> routers
+
+    models:
+    routers: -> instead of using get('/') in app.js -> using that stuff in router.js
+            //code
+
+            using more the  folders in routers directory to handle tasks on their own
+
+            routers to write route : get post ('/shop/signup',()=>{})
+            controllers to write their behavior
+
+//high level : generate code by class
+
+status: 200 success
+        201 created => for post or create account
